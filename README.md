@@ -1,15 +1,16 @@
 # GMT ETOPO1 Mariana Trench — Map Projection Variants
 
-GMT (Generic Mapping Tools) shell scripts mapping the bathymetry of the Mariana Trench from the ETOPO1 global relief grid, each rendered in a different map projection. The pair demonstrates how the choice of projection changes the appearance and geometry of the same study area. The scripts have been used to generate figures in the author's marine-geomorphological and cartographic publications.
+GMT (Generic Mapping Tools) shell scripts mapping the bathymetry of the Mariana Trench from the ETOPO1 global relief grid, each rendered in a different map projection. The set demonstrates how the choice of projection changes the appearance and geometry of the same study area. The scripts have been used to generate figures in the author's marine-geomorphological and cartographic publications.
 
 ## What the scripts do
 
-Each script clips an ETOPO1 subset over the Mariana Trench (grdcut), builds a bathymetric colour palette (makecpt), renders a shaded raster image in the chosen projection (grdimage), and adds a colour scale (psscale), contours (grdcontour), grid, scale bar and directional rose (psbasemap), toponymy labels (pstext) and the GMT logo (logo), before exporting to raster (psconvert).
+Each script clips an ETOPO1 subset over the Mariana Trench (grdcut), builds a bathymetric colour palette (makecpt), renders a shaded raster image in the chosen projection (grdimage), and adds a colour scale (psscale), contours (grdcontour), grid, scale bar and directional rose (psbasemap), toponymy labels (pstext) and the GMT logo (logo), before exporting to raster (psconvert). The Polyconic variant additionally annotates the arc / crescent geometry of the trench with a math-angle arc, circle and vector (psxy).
 
 ## Projections
 
 - GMT-20-script-JC-ETOPO1-MT.sh: Cassini transverse cylindrical projection (-JC)
 - GMT-14-script-JY-ETOPO1-MT.sh: Cylindrical Equal-Area Gall-Peters projection (-JY)
+- GMT-12-script-MT-JPoly-ETOPO1arc.sh: Polyconic projection (-JPoly), with trench-shape annotation
 
 ## Data source
 
